@@ -1,9 +1,10 @@
 <template>
   <nav>
     <div>
+      <router-link to="/search">Search</router-link>
       <router-link to="/workspace">Workspace</router-link>
       <router-link to="/inquiries">Inquiries</router-link>
-      <a href="https://github.com/lana-k/sqliteviz/wiki" target="_blank">Help</a>
+      <!-- <a href="https://github.com/lana-k/sqliteviz/wiki" target="_blank">Help</a> -->
     </div>
     <div id="nav-buttons">
       <button

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Workspace from '@/views/Main/Workspace'
+import Search from '@/views/Main/Search'
 import Inquiries from '@/views/Main/Inquiries'
 import Welcome from '@/views/Welcome'
 import Main from '@/views/Main'
@@ -20,6 +21,11 @@ const routes = [
     name: 'Main',
     component: Main,
     children: [
+      {
+        path: '/search',
+        name: 'Search',
+        component: Search
+      },
       {
         path: '/workspace',
         name: 'Workspace',

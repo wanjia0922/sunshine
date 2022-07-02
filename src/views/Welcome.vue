@@ -2,7 +2,7 @@
   <div id="dbloader-container">
     <db-uploader type="illustrated" />
     <div id="note">
-      Sqliteviz is fully client-side. Your database never leaves your computer.
+      Sunshine-Tool is fully client-side. To Change the code way.
     </div>
     <button id="skip" class="secondary" @click="$router.push('/workspace')">
       Create empty database
@@ -31,7 +31,7 @@ export default {
 
 #note {
   margin-top: 27px;
-  font-size: 13px;
+  font-size: 20px;
   color: var(--color-text-base);
 }
 
