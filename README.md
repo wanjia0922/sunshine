@@ -3,15 +3,16 @@
 
 # Json construct sql
 Json构造复杂sql
++ https://github.com/liyupi/sql-generator
 
 # Polymerization Search
 前台聚合搜索
 
-# Sqliteviz
 <p align="center">
    <img src="src/assets/images/Logo.svg"/>
-   可视化sqlite执行平台
+   <span>Sqliteviz</span>
 </p>
+# Sqliteviz
 Sqliteviz is a single-page offline-first PWA for fully client-side visualisation of SQLite databases or CSV files.
 
 With sqliteviz you can:
