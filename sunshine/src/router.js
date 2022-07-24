@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Workspace from '@/views/Main/Workspace'
+import Python from '@/views/Main/Python'
 import Search from '@/views/Main/Search'
 import Inquiries from '@/views/Main/Inquiries'
 import Welcome from '@/views/Welcome'
@@ -25,6 +26,11 @@ const routes = [
         path: '/search',
         name: 'Search',
         component: Search
+      },
+      {
+        path: '/python',
+        name: 'Python',
+        component: Python
       },
       {
         path: '/workspace',
