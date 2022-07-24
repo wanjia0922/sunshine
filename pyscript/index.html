@@ -22,40 +22,12 @@
                 lang: python
     </py-config>
     <py-env>
+        - "/static/pyodide/youtube_dl-2021.12.17-py2.py3-none-any.whl"
         - paths:
             - /static/python/client.py
-            - /static/python/weather_api.py
     </py-env>
 </head>
 <body id="the_body">
-<main>
-    <nav>
-        <h1><strong>PyPWA Weather</strong> (by <a href="https://twitter.com/mkennedy" target="_blank">@mkennedy</a>)
-        </h1>
-        <ul>
-            <li><a id="refresh">refresh</a></li>
-        </ul>
-    </nav>
-    <div id="weather" class="hidden">
-        <div id="image-container">
-            <img id="image" src="#"/>
-        </div>
-        <div id="temp">
-
-        </div>
-        <div id="forecast">
-
-        </div>
-    </div>
-    <div style="clear: both;"></div>
-</main>
-
-<footer>
-    <div class="footer-content">
-        A pyscript demo app by <a href="https://twitter.com/mkennedy" target="_blank">@mkennedy</a>, copyright 2022.
-    </div>
-</footer>
-<py-script src="/static/python/client.py"></py-script>
-<script src="/static/js/pwa-scaffold.js"></script>
+    <py-repl id="my-repl" auto-generate=true> </py-repl>
 </body>
 </html>
