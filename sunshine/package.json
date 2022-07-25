@@ -25,6 +25,8 @@
     "react-chart-editor": "^0.45.0",
     "react-dom": "^16.13.1",
     "sql.js": "file:./lib/sql-js",
+    "pyodide": "0.20.0",
+    "vue-head": "2.2.0",
     "vue": "^2.6.11",
     "vue-codemirror": "^4.0.6",
     "vue-js-modal": "^2.0.0-rc.6",

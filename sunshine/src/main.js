@@ -4,6 +4,7 @@ import router from '@/router'
 import store from '@/store'
 import { VuePlugin } from 'vuera'
 import VModal from 'vue-js-modal'
+import VueHead from 'vue-head'
 
 import '@/assets/styles/variables.css'
 import '@/assets/styles/buttons.css'
