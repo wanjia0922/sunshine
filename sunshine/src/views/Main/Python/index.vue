@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <iframe class="page" :src="src" frameborder="0"></iframe>
+    <iframe  :src="src" scrolling="auto" frameborder="0" class="page"></iframe>
   </div>
 </template>
 
