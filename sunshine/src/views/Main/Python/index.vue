@@ -1,12 +1,10 @@
 <template>
   <div class="page">
-    <py-repl id="my-repl" auto-generate=true></py-repl>
+    <iframe class="page" :src="src" frameborder="0"></iframe>
   </div>
 </template>
 
 <script>
-import '@/assets/pyscript/pyscript.js';
-import '@/assets/pyscript/pyscript.css';
 
 export default {
   name: 'Python',

@@ -21,6 +21,7 @@ if (!['localhost', '127.0.0.1'].includes(location.hostname)) {
 
 Vue.use(VuePlugin)
 Vue.use(VModal)
+Vue.use(VueHead)
 
 Vue.config.productionTip = false
 

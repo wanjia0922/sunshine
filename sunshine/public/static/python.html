@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>demo</title>
+    <link rel="stylesheet" href="/static/pyscript/pyscript.css"/>
+    <script async defer src="/static/pyscript/pyscript.js"></script>
+    <py-config style="display: none;">
+        - autoclose_loader: true
+        - runtimes:
+            -
+                src: "/static/pyodide/pyodide.js"
+                name: pyodide-0.20
+                lang: python
+    </py-config>
+    <py-env>
+        
+    </py-env>
+</head>
+<body id="the_body">
+    <py-repl id="my-repl" auto-generate=true> </py-repl>
+</body>
+</html>
