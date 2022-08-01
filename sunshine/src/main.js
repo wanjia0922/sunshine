@@ -5,6 +5,7 @@ import store from '@/store'
 import { VuePlugin } from 'vuera'
 import VModal from 'vue-js-modal'
 import VueHead from 'vue-head'
+import ElementUI from 'element-ui';
 
 import '@/assets/styles/variables.css'
 import '@/assets/styles/buttons.css'
@@ -14,6 +15,7 @@ import '@/assets/styles/tooltips.css'
 import '@/assets/styles/messages.css'
 import 'vue-multiselect/dist/vue-multiselect.min.css'
 import '@/assets/styles/multiselect.css'
+import 'element-ui/lib/theme-chalk/index.css'; 
 
 if (!['localhost', '127.0.0.1'].includes(location.hostname)) {
   import('./registerServiceWorker') // eslint-disable-line no-unused-expressions
@@ -22,6 +24,7 @@ if (!['localhost', '127.0.0.1'].includes(location.hostname)) {
 Vue.use(VuePlugin)
 Vue.use(VModal)
 Vue.use(VueHead)
+Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 

@@ -23,14 +23,14 @@ const routes = [
     component: Main,
     children: [
       {
-        path: '/workspace',
-        name: 'Workspace',
-        component: Workspace
-      },
-      {
         path: '/search',
         name: 'Search',
         component: Search
+      },
+      {
+        path: '/workspace',
+        name: 'Workspace',
+        component: Workspace
       },
       {
         path: '/python',
