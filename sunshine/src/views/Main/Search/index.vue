@@ -24,38 +24,41 @@
       style="width: 100%">
       <el-table-column
         prop="date"
-        label="日期"
+        label="创建日期"
         sortable
         column-key="date"
-        :filters="[{text: '2016-05-01', value: '2016-05-01'}, {text: '2016-05-02', value: '2016-05-02'}, {text: '2016-05-03', value: '2016-05-03'}, {text: '2016-05-04', value: '2016-05-04'}]"
+        :filters="[]"
         :filter-method="filterHandler"
       >
-      </el-table-column>
+      </el-table-column>code
       <el-table-column
-        prop="name"
-        label="姓名"
+        prop="code"
+        label="代码块"
       >
+        <template slot-scope="scope">
+                            <div v-html="scope.row.code"></div>
+                        </template>
       </el-table-column>
       <el-table-column
-        prop="address"
-        label="地址"
+        prop="description"
+        label="描述"
         :formatter="formatter">
       </el-table-column>
       <el-table-column
         prop="tag"
         label="标签"
-        :filters="[{ text: '家', value: '家' }, { text: '公司', value: '公司' }]"
+        :filters="[{ text: 'Java', value: 'Java' }]"
         :filter-method="filterTag"
         filter-placement="bottom-end">
         <template slot-scope="scope">
           <el-tag
-            :type="scope.row.tag === '家' ? 'primary' : 'success'"
+            :type="scope.row.tag === 'Java' ? 'primary' : 'success'"
             disable-transitions>{{scope.row.tag}}</el-tag>
         </template>
       </el-table-column>
     </el-table>
   </el-row>
-  <el-row>
+  <el-row style="margin-top: 10px;">
       <el-pagination
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
@@ -68,6 +71,12 @@
       >
     </el-pagination>
   </el-row>
+  <el-row>
+    <highlight-code lang="javascript">
+            let str = 'Hello, World!';
+            console.log(str);
+        </highlight-code>
+  </el-row>
   </div>
 </template>
 
@@ -77,28 +86,27 @@ export default {
   components: {},
   data() {
     return {
+        code: "console.log()",
        tableData: [{
           date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄',
-          tag: '家'
-        }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1517 弄',
-          tag: '公司'
-        }, {
-          date: '2016-05-01',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1519 弄',
-          tag: '家'
-        }, {
-          date: '2016-05-03',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1516 弄',
-          tag: '公司'
-        }],
-    };
+          code: '<h2>大写的</h2>',
+          description: '<highlightjs language="html" autodetect code="var x = 5;" />',
+          tag: 'Java'
+        },
+        {
+          date: '2016-05-02',
+          code: '<highlightjs language="html" autodetect code="var x = 5;" />',
+          description: '当前路径',
+          tag: 'Bash'
+        },
+        {
+          date: '2016-05-02',
+          code: 'ls -lh',
+          description: '当前路径',
+          tag: 'Java'
+        },
+        ],
+    }
   },
   methods: {
     resetDateFilter() {
@@ -108,7 +116,7 @@ export default {
         this.$refs.filterTable.clearFilter();
       },
       formatter(row, column) {
-        return row.address;
+        return row.description;
       },
       filterTag(value, row) {
         return row.tag === value;

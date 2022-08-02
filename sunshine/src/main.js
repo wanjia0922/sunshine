@@ -6,7 +6,11 @@ import { VuePlugin } from 'vuera'
 import VModal from 'vue-js-modal'
 import VueHead from 'vue-head'
 import ElementUI from 'element-ui';
+import VueHighlightJS from 'vue-highlight.js';
+// Highlight.js languages (All languages)
+import 'vue-highlight.js/lib/allLanguages'
 
+import "highlight.js/styles/base16/solarized-dark.css";
 import '@/assets/styles/variables.css'
 import '@/assets/styles/buttons.css'
 import '@/assets/styles/tables.css'
@@ -21,10 +25,12 @@ if (!['localhost', '127.0.0.1'].includes(location.hostname)) {
   import('./registerServiceWorker') // eslint-disable-line no-unused-expressions
 }
 
+
 Vue.use(VuePlugin)
 Vue.use(VModal)
 Vue.use(VueHead)
-Vue.use(ElementUI);
+Vue.use(ElementUI)
+Vue.use(VueHighlightJS);
 
 Vue.config.productionTip = false
 
