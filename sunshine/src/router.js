@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Workspace from '@/views/Main/Workspace'
 import Python from '@/views/Main/Python'
 import Search from '@/views/Main/Search'
+import Markdown from '@/views/Main/Markdown'
 import Inquiries from '@/views/Main/Inquiries'
 import Welcome from '@/views/Welcome'
 import Main from '@/views/Main'
@@ -22,6 +23,11 @@ const routes = [
     name: 'Main',
     component: Main,
     children: [
+      {
+        path: '/markdown',
+        name: 'Markdown',
+        component: Markdown
+      },
       {
         path: '/search',
         name: 'Search',

@@ -119,7 +119,7 @@ module.exports = function (config) {
         alias: {
           vue$: 'vue/dist/vue.esm.js',
           '@': resolve('src'),
-          'static':path.resolve(__dirname, './public/static'),
+          static: path.resolve(__dirname, './public/static')
         }
       },
       module: {

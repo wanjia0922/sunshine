@@ -72,10 +72,7 @@
     </el-pagination>
   </el-row>
   <el-row>
-    <highlight-code lang="javascript">
-            let str = 'Hello, World!';
-            console.log(str);
-        </highlight-code>
+    <highlightjs language='java' code=" abstract public static void main(String args[]) { System.out.println('===============')}" />
   </el-row>
   </div>
 </template>
@@ -86,7 +83,7 @@ export default {
   components: {},
   data() {
     return {
-        code: "console.log()",
+        code: 'console.log()',
        tableData: [{
           date: '2016-05-02',
           code: '<h2>大写的</h2>',

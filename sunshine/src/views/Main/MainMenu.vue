@@ -1,6 +1,7 @@
 <template>
   <nav>
     <div>
+      <router-link to="/markdown">Markdown</router-link>
       <router-link to="/search">Search</router-link>
       <router-link to="/Python">Python</router-link>
       <router-link to="/workspace">Workspace</router-link>
