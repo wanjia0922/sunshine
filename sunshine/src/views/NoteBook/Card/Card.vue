@@ -1,27 +1,27 @@
 <template>
     <div>
-        
+
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Card',
+  name: 'Card',
 
-    data() {
-        return {
-            
-        };
-    },
+  data () {
+    return {
 
-    mounted() {
-        
-    },
+    }
+  },
 
-    methods: {
-        
-    },
-};
+  mounted () {
+
+  },
+
+  methods: {
+
+  }
+}
 </script>
 
 <style lang="scss" scoped>

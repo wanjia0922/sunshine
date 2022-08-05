@@ -13,7 +13,9 @@ module.exports = {
         // It is important that we do not change its name,
         // and that it is in the same folder as the js
         { from: 'node_modules/sql.js/dist/sql-wasm.wasm', to: 'js/' },
-        { from: 'LICENSE', to: './' }
+        { from: 'LICENSE', to: './' },
+        // vditor 配置文件本地cdn
+        { from: 'node_modules/vditor/dist/*', to: 'vditor' }
       ]),
       new WorkboxPlugin.GenerateSW({
         exclude: [/\.map$/, 'LICENSE', 'inquiries.json'],

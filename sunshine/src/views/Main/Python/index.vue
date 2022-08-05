@@ -15,21 +15,21 @@ export default {
     }
   },
   mounted () {
-    this.src = `static/python.html${this.showSessionId}`;
+    this.src = `static/python.html${this.showSessionId}`
     this.showSessionId = window.location.search
-  }, 
+  },
   head: {
   // creates a title tag in header.
-  title () {
-    return {
-      inner: this.title
-    }
-  },
-  meta: [
+    title () {
+      return {
+        inner: this.title
+      }
+    },
+    meta: [
     // creates a meta description tag in header.
-    { name: 'description', content: 'My description' }
-  ]
-}
+      { name: 'description', content: 'My description' }
+    ]
+  }
 }
 </script>
 

@@ -16,7 +16,7 @@
     "core-js": "^3.6.5",
     "dataurl-to-blob": "^0.0.1",
     "element-ui": "^2.15.9",
-    "highlight.js": "^11.6.0",
+    "highlight.js": "^10.7.2",
     "html2canvas": "^1.1.4",
     "immutable": "^4.1.0",
     "jquery": "^3.6.0",
